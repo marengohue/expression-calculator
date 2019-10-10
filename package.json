@@ -1,0 +1,17 @@
+{
+  "name": "expression-calculator",
+  "version": "1.0.0",
+  "main": "./src/index.coffee",
+  "author": "marengohue",
+  "scripts": {
+    "start": "./node_modules/coffeescript/bin/coffee ./src/index.coffee",
+    "build": "./node_modules/coffeescript/bin/coffee --compile --output ./dist/ ./src/",
+    "test": "yarn build && ./node_modules/mocha/bin/mocha ./test/test.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coffeescript": "^2.4.1",
+    "mocha": "^6.2.1"
+  }
+}
